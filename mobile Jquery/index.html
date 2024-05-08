@@ -1,85 +1,113 @@
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery Mobile: Theme Download</title>
+    <link rel="stylesheet" href="themes/a.min.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jquery-mobile/1.4.5/jquery.mobile.min.js"
+    />
+  </head>
+  <body>
+    <div data-role="page" id="page1" data-theme="a">
+      <div data-role="header">
+        <h1>Welcome!!!</h1>
+      </div>
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>jQuery Mobile: Theme Download</title>
-	<link rel="stylesheet" href="themes/jmb11.min.css" />
-	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-	<link rel="stylesheet" href="style.css">
-</head>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1">Home</a></li>
+          <li><a href="#page2">About</a></li>
+          <li><a href="#page3">Contact us</a></li>
+        </ul>
+      </div>
 
-<body>
-	<div data-role="page" id="page" data-theme="a">
-		<div data-role="header" data-position="inline">
-			<h1>Welcome!!!</h1>
-		</div>
-		<p>This the first page</p>
-		<div data-role="navbar" data-position="incline">
+      <div data-role="content">
+        <h2>Fill out following information</h2>
 
-			<a href="#page1">Form</a>
-			<a href="#page2">About us</a>
-			<a href="#menu">Menu</a>
+        <form>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+            value=""
+          />
 
-		</div>
-		
-		<div data-role="footer" id="page" data-theme="a">
-			<h1>KBTCOE</h1>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            value=""
+          />
 
-		</div>
+          <button href="#page1">Submit</button>
+        </form>
+      </div>
 
+      <div data-role="footer">
+        <h1>&copy;Tejasvini</h1>
+      </div>
+    </div>
 
-	</div>
-	<div data-role="page1" id="page1" data-theme="a">
-		<div data-role="header" data-position="inline">
-			<h1>Welcome!!!</h1>
-		</div>
+    <div data-role="page" id="page2" data-theme="a">
+      <div data-role="header">
+        <h1>Welcome!!!</h1>
+      </div>
 
-		<h2>Fill this form</h2>
-		<form>
-			<p>
-				<label>Username :
-					<input type="text" />Enter username</label>
-			</p>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1">Home</a></li>
+          <li><a href="#page2">About</a></li>
+          <li><a href="#page3">Contact us</a></li>
+        </ul>
+      </div>
 
-			<p>
-				<label>Password :
-					<input type="password" />Enter password</label>
-			</p>
+      <div data-role="main">
+        <h3 style="text-align: justify">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, porro facilis aspernatur esse laudantium suscipit cupiditate ducimus natus sed adipisci vel aut, laborum id magni sit ex labore, harum repellat!
+        </h3>
+      </div>
 
-			<p>
-				<button type="submit">Submit</button>
-			</p>
-		</form>
-	</div>
-	<div data-role="page2" id="page2" data-theme="a">
-		<div data-role="header" data-position="inline">
-			<h1>Welcome!!!</h1>
-		</div>
-		<h2>All about us</h2>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum natus ut hic officiis praesentium voluptas
-			debitis soluta nesciunt, temporibus repellat, ratione libero, obcaecati minima harum quos ducimus. Esse,
-			eius nihil.</p>
-	</div>
-	<div data-role="menu" id="menu">
-		<h4>Menu</h4>
+      <div data-role="footer">
+        <h1>&copy;Tejasvini</h1>
+      </div>
+    </div>
 
-		<p>Choose your branch</p>
+    <div data-role="page" id="page3" data-theme="a">
+      <div data-role="header">
+        <h1>Welcome!!!</h1>
+      </div>
 
-		<form>
-			<input type="radio" id="html" name="branch" value="Computer">
-			<label for="html">Computer</label><br>
-			<input type="radio" id="css" name="branch" value="IT">
-			<label for="css">IT</label><br>
-			<input type="radio" id="javascript" name="branch" value="Civil">
-			<label for="javascript">Civil</label>
-		</form>
-	</div>
+      <div data-role="navbar">
+        <ul>
+          <li><a href="#page1">Home</a></li>
+          <li><a href="#page2">About</a></li>
+          <li><a href="#page3">Contact us</a></li>
+        </ul>
+      </div>
 
-</body>
+      <div data-role="main">
+       <p>Name: TVD</p><br>
+	   <p>Address: KBTCOE</p><br>
+	   <p>Conatct:1234567891</p>
+      </div>
 
+      <div data-role="footer">
+        <h1>&copy;Tejasvini</h1>
+      </div>
+    </div>
+  </body>
 </html>
