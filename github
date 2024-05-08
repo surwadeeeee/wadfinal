@@ -1,0 +1,9 @@
+git --version
+git init
+git add
+git status
+copy http link from github
+git remote add origin ".."
+git commit -m "msg"
+git status
+git push -u origin master
